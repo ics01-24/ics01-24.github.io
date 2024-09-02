@@ -1,0 +1,36 @@
+.vp-doc a {
+  word-wrap: break-word
+}
+
+html.dark .f-message {
+  background: #333;
+  color: #fff;
+  box-shadow: #222222 1px 1px 7px, #222222 -1px -1px 7px
+}
+
+html.dark .DocSearch-Button-Key,
+html.dark .DocSearch-Search-Icon {
+  color: #1d2f3f;
+}
+
+html.dark .DocSearch.DocSearch-Button {
+  background: #8e8e8e;
+}
+
+mjx-container[display="true"] {
+  overflow: auto;
+}
+
+mjx-container>svg {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .DocSearch-Button {
+    height: 100%;
+    padding: .5em;
+    padding-left: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+}
