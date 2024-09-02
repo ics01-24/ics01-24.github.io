@@ -1,5 +1,5 @@
 {
-  "name": "ics-fa23",
+  "name": "ics-fa24",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
