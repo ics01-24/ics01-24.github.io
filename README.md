@@ -8,7 +8,8 @@
 
 对本仓库的修改会自动 push 到网页上，欢迎 PR 和 Issue
 
-本仓库由[2022年秋季CS1002A.03班课程主页仓库](https://github.com/liuly0322/ics)修改而来，感谢刘助教、许助教、叶助教的贡献
+本仓库由[2023年秋季CS1002A.01班课程主页仓库](https://github.com/ics01-23/ics01-23.github.io)修改而来
+> 本仓库由[2022年秋季CS1002A.03班课程主页仓库](https://github.com/liuly0322/ics)修改而来，感谢刘助教、许助教、叶助教的贡献
 
 LC3 评测使用 <https://github.com/wchargin/lc3web>, 参照原项目协议
 
