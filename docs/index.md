@@ -1,11 +1,11 @@
-# 计算系统概论 FA23
+# 计算系统概论 FA24
 
-本站是 2023 Fall CS1002A.01 班课程主页，课程 qq 群：432208617
+本站是 2024 Fall 011704.01 班课程主页，课程 qq 群：682531139
 
 作为课程组首页： <https://acsa.ustc.edu.cn/ics> 的补充
 
-- 本课程回放链接： <https://v.ustc.edu.cn/1/2023-1/capture-course/CS1002A.01/detail>
-- 本站 GitHub 仓库： <https://github.com/ics01-23/ics01-23.github.io>
+<!-- - 本课程回放链接： <https://v.ustc.edu.cn/1/2023-1/capture-course/CS1002A.01/detail> -->
+- 本站 GitHub 仓库： <https://github.com/ics01-24/ics01-24.github.io>
   - Issues and PRs are welcomed
 
 ## 课程通知
