@@ -1,1 +1,0 @@
-import{_ as t,o as s,c as e,a as o}from"./app.454a46e9.js";const h=JSON.parse('{"title":"\u6210\u7EE9","description":"","frontmatter":{},"headers":[],"relativePath":"score.md","lastUpdated":1725270852000}'),i={name:"score.md"},l=o("",2),r=[l];function n(a,_,c,d,p,u){return s(),e("div",null,r)}const f=t(i,[["render",n]]);export{h as __pageData,f as default};
