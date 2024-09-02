@@ -12,8 +12,8 @@ import mathjax3 from 'markdown-it-mathjax3'
 const customElements = ['mjx-container']
 
 const config = defineConfig({
-  title: 'ICS Fall 2023',
-  description: 'USTC ICS CS1002A.01 Fall 2023 Homepage',
+  title: 'ICS Fall 2024',
+  description: 'USTC ICS 011704.01 Fall 2024 Homepage',
   lang: 'zh-CN',
   lastUpdated: true,
   themeConfig: {
@@ -21,11 +21,11 @@ const config = defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/ics01-23/ics01-23.github.io',
+        link: 'https://github.com/ics01-24/ics01-24.github.io',
       },
     ],
     editLink: {
-      pattern: 'https://github.com/ics01-23/ics01-23.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/ics01-24/ics01-24.github.io/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页 ',
     },
     nav,
