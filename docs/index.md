@@ -13,6 +13,10 @@
 作业和实验均通过 [BlackBoard 系统](https://www.bb.ustc.edu.cn/) 提交，请**仔细阅读提交说明**！
 
 - 作业
+  - 2023-09-14: [作业一](./homework/hw1.html) 已发布，Deadline: **待定**
+- 实验
+  - wait
+<!-- - 作业
   - 2023-09-22: [作业一](./homework/hw1.html) 已发布，Deadline: **09 月 28 日 23:30**
   - 2023-10-13: [作业二](./homework/hw2.html) 已发布，Deadline: **10 月 20 日 23:30**
   - 2023-10-20: [作业三](./homework/hw3.html) 已发布，Deadline: **10 月 27 日 23:30**
@@ -27,4 +31,4 @@
   - 2023-12-12: [实验五](./labs/lab5.html) 已发布，Deadline: **12 月 24 日 23:30**
   - 2023-12-19: [实验六](./labs/lab6.html) 已发布，Deadline: **12 月 31 日 23:30**
   - 2023-12-25: [实验七](./labs/lab7.html) 已发布，Deadline: **01 月 12 日 23:30**
-  - 2024-01-02: [实验八](./labs/lab8.html) 已发布，Deadline: **01 月 14 日 23:30**
+  - 2024-01-02: [实验八](./labs/lab8.html) 已发布，Deadline: **01 月 14 日 23:30** -->
