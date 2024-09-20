@@ -11,113 +11,109 @@ const labs: Record<string, LabPreset> = {
   lab1: {
     testCode: `
 let [number, id] = testcase.split(':').map(Number)
-lc3.memory[0x3100] = number
-let mask = 1
-let ans  = 0
-let bit  = 16
-if (number % 2 == 0) {
-  number = ~number + 1
-}
-while (bit--) {
-  if (!(number & mask)) {
-    ans++
-  }
-  mask = mask + mask
-}
-return [id % 10, ans + (id % 10)]`,
-    ansCode: 'return [lc3.memory[0x3101], lc3.memory[0x3102]]',
-    testCases: '5:12345678, 100:12345678',
+lc3.r[0] = number
+const secret = parseInt(id.toString().split("").map(c => {
+    if ("13579".includes(c)) return "1"     
+    else return "0" 
+}).join(""),2);
+return number ^ secret`,
+    ansCode: 'return lc3.r[3]',
+    testCases: '194:12345678, 100:12345678',
   },
   lab2: {
     testCode: `
 let [n] = testcase.split(':').map(Number)
-lc3.memory[0x3102] = n
-let f = 3
-let d = 1
-while (--n) {
-  f = 2 * (f + d) % 4096
-  if (f % 8 == 0 | f % 10 == 8) {
-    d = -d
-  }
+lc3.memory[0x3100] = n
+var k = 0
+var i = n
+while (i != 1) {
+    k++
+    if ((i % 2)==0) {
+        i = i / 2
+    }
+    else{
+        i = 3 * i + 1
+    }
 }
-return f`,
-    ansCode: 'return lc3.memory[0x3103]',
-    testCases: '1, 2, 3, 4',
+return k`,
+    ansCode: 'return lc3.memory[0x3101]',
+    testCases: '6, 16, 26, 36, 46',
   },
   lab3: {
     testCode: `
-let [str1, str2] = testcase.split(':')
-for (let i = 0; i < str1.length; i++) {
-  lc3.memory[0x3100 + i] = str1.charCodeAt(i);
+let [str,n] = testcase.split(':')
+lc3.memory[0x3100] = parseInt(n)
+for (let i = 0; i < str.length; i++) {
+  lc3.memory[0x3101 + i] = str.charCodeAt(i);
 }
-for (let i = 0; i < str2.length; i++) {
-  lc3.memory[0x3200 + i] = str2.charCodeAt(i);
-}
-for (let i = 0; i < Math.min(str1.length, str2.length); i++) {
-  if (str1.charCodeAt(i) != str2.charCodeAt(i)) {
-    return str1.charCodeAt(i) - str2.charCodeAt(i);
+var i = 0
+var j = n - 1
+while(i <= j){
+  if(str[i] == str[j]){
+    i++
+    j--
   }
-}
-if (str1.length < str2.length) {
-  return -str2.charCodeAt(str1.length);
-} else if (str1.length > str2.length) {
-  return str1.charCodeAt(str2.length);
-} else {
-  return 0;
-}`,
+  else return 0
+} 
+return 1`,
     ansCode: `
-if (lc3.memory[0x3300] > 32767) {
-  return lc3.memory[0x3300] - 65536;
-} else {
-  return lc3.memory[0x3300];
-}`,
-    testCases: 'DsTAs:DstA, DsTAs:DsTA',
+return lc3.memory[0x3200]`,
+    testCases: 'abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14',
   },
   lab4: {
     testCode: `
-let n = Number(testcase);
-lc3.memory[0x3100] = n;
-let arr = [];
+let n = Number(testcase)
+lc3.memory[0x3100] = n
+let earnArray = new Array(100).fill(-1);    // 假设最大n为100，数组初始化为-1
+let spendArray = new Array(100).fill(-1);
+let savingsArray = new Array(100).fill(-1);
 
-function f(n, m) {
-  if (n == 0) {
-    return m;
-  } 
-  if (n == 1) {
-    arr.push(m | 1);
-    return m | 1;
+// earn 函数
+function earn(n) {
+  if (earnArray[n] !== -1) {
+    return earnArray[n];
   }
-  let s = f(n - 2, m) | (1 << (n - 1));
-  arr.push(s);
-  return f(n - 1, g(n - 2, s));
+  if (n === 0) {
+    earnArray[n] = 6;
+  } else {
+    earnArray[n] = earn(n - 1) * 2;
+  }
+  return earnArray[n];
 }
 
-function g(n, m) {
-  if (n == 0) {
-    return m;
+// spend 函数
+function spend(n) {
+  if (spendArray[n] !== -1) {
+    return spendArray[n];
   }
-  if (n == 1) {
-    arr.push(m & ~1);
-    return m & -2;
+  if (n === 0) {
+    spendArray[n] = 2;
+  } else if (spend(n - 1) >= earn(n - 1)) {
+    spendArray[n] = 2;
+  } else {
+    spendArray[n] = spend(n - 1) * 4;
   }
-  let s = f(n - 2, g(n - 1, m)) & ~(1 << (n - 1));
-  arr.push(s);
-  return g(n - 2, s);
+  return spendArray[n];
 }
 
-f(n, 0);
-return arr;
+// savings 函数
+function savings(n) {
+  if (savingsArray[n] !== -1) {
+    return savingsArray[n];
+  }
+  if (n === 0) {
+    savingsArray[n] = 10;
+  } else {
+    savingsArray[n] = savings(n - 1) + earn(n - 1) - spend(n - 1);
+  }
+  return savingsArray[n];
+}
+return savings(n)
 `,
     ansCode: `
-let arr = [];
-let i = 0x3101;
-while (lc3.memory[i] != 0) {
-  arr.push(lc3.memory[i]);
-  i++;
-}
-return arr;
+return lc3.memory[0x3200]
 `,
-    testCases: '3',
+    testCases: '5,6,7,8,9,10',
   },
   自定义: {
     testCode: '',
