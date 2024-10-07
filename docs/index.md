@@ -13,7 +13,22 @@
 作业和实验均通过 [BlackBoard 系统](https://www.bb.ustc.edu.cn/) 提交，请**仔细阅读提交说明**！
 
 - 作业
-  - 2023-09-14: [作业一](./homework/hw1.html) 已发布，Deadline: **待定**
+  - 2024-09-14: [作业一](./homework/hw1.html) 已发布，Deadline: **09 月 29 日 23:30**
+  - 2024-xx-xx: [作业二](./homework/hw2.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [作业三](./homework/hw3.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [作业四](./homework/hw4.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [作业五](./homework/hw5.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [作业六](./homework/hw6.html) 已发布，Deadline: **xx**
+- 实验
+  - 2024-xx-xx: [实验一](./labs/lab1.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验二](./labs/lab2.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验三](./labs/lab3.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验四](./labs/lab4.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验五](./labs/lab5.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验六](./labs/lab6.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验七](./labs/lab7.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [汇编器](./labs/laba.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [模拟器](./labs/labs.html) 已发布，Deadline: **xx**
 - 实验
   - wait
 <!-- - 作业
