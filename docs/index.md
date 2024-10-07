@@ -29,8 +29,7 @@
   - 2024-xx-xx: [实验七](./labs/lab7.html) 已发布，Deadline: **xx**
   - 2024-xx-xx: [汇编器](./labs/laba.html) 已发布，Deadline: **xx**
   - 2024-xx-xx: [模拟器](./labs/labs.html) 已发布，Deadline: **xx**
-- 实验
-  - wait
+
 <!-- - 作业
   - 2023-09-22: [作业一](./homework/hw1.html) 已发布，Deadline: **09 月 28 日 23:30**
   - 2023-10-13: [作业二](./homework/hw2.html) 已发布，Deadline: **10 月 20 日 23:30**
