@@ -5,7 +5,7 @@ const secret = parseInt(id.toString().split("").map(c => {
     if ("13579".includes(c)) return "1"     
     else return "0" 
 }).join(""),2);
-return number ^ secret`,ansCode:"return lc3.r[3]",testCases:"194:12345678, 100:12345678"},lab2:{testCode:`
+return (number ^ secret) & 0xffff`,ansCode:"return lc3.r[3]",testCases:"194:12345678, 100:12345678"},lab2:{testCode:`
 let [n] = testcase.split(':').map(Number)
 lc3.memory[0x3100] = n
 var k = 0
