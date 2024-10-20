@@ -16,7 +16,7 @@ const secret = parseInt(id.toString().split("").map(c => {
     if ("13579".includes(c)) return "1"     
     else return "0" 
 }).join(""),2);
-return number ^ secret`,
+return (number ^ secret) & 0xffff`,
     ansCode: 'return lc3.r[3]',
     testCases: '194:12345678, 100:12345678',
   },
