@@ -10,7 +10,7 @@ let [n] = testcase.split(':').map(Number)
 lc3.memory[0x3100] = n
 var k = 0
 var i = n
-while (i != 1) {
+while (i != 1 || k == 0) {
     k++
     if ((i % 2)==0) {
         i = i / 2
