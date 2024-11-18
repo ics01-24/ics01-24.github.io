@@ -16,12 +16,13 @@
   - 2024-09-14: [作业一](./homework/hw1.html) 已发布，Deadline: **09 月 29 日 23:30**
   - 2024-xx-xx: [作业二](./homework/hw2.html) 已发布，Deadline: **11 月 03 日 23:30**
   - 2024-xx-xx: [作业三](./homework/hw3.html) 已发布，Deadline: **11 月 03 日 23:30**
-  - 2024-xx-xx: [作业四](./homework/hw4.html) 已发布，Deadline: **xx**
-  - 2024-xx-xx: [作业五](./homework/hw5.html) 已发布，Deadline: **xx**
-  - 2024-xx-xx: [作业六](./homework/hw6.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [作业四](./homework/hw4.html) 已发布，Deadline: **11 月 10 日 23:30**
+  - 2024-xx-xx: [作业五](./homework/hw5.html) 已发布，Deadline: **11 月 17 日 23:30**
+  - 2024-xx-xx: [作业六](./homework/hw6.html) 已发布，Deadline: **12 月 01 日 23:30**
+  - 2024-xx-xx: [作业七](./homework/hw7.html) 已发布，Deadline: **xx**
 - 实验
-  - 2024-xx-xx: [实验一](./labs/lab1.html) 已发布，Deadline: **xx**
-  - 2024-xx-xx: [实验二](./labs/lab2.html) 已发布，Deadline: **xx**
+  - 2024-xx-xx: [实验一](./labs/lab1.html) 已发布，Deadline: **11 月 10 日 23:30**
+  - 2024-xx-xx: [实验二](./labs/lab2.html) 已发布，Deadline: **11 月 24 日 23:30**
   - 2024-xx-xx: [实验三](./labs/lab3.html) 已发布，Deadline: **xx**
   - 2024-xx-xx: [实验四](./labs/lab4.html) 已发布，Deadline: **xx**
   - 2024-xx-xx: [实验五](./labs/lab5.html) 已发布，Deadline: **xx**
