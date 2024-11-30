@@ -58,7 +58,7 @@ while(i <= j){
 return 1`,
     ansCode: `
 return lc3.memory[0x3200]`,
-    testCases: 'abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14',
+    testCases: ':0, abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14',
   },
   lab4: {
     testCode: `
