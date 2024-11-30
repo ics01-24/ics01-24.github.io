@@ -60,6 +60,27 @@ return 1`,
 return lc3.memory[0x3200]`,
     testCases: ':0, abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14',
   },
+  lab3_p: {
+    testCode: `
+let [str,n] = testcase.split(':')
+lc3.memory[0x3100] = parseInt(n)
+for (let i = 0; i < str.length; i++) {
+  lc3.memory[0x3101 + i] = str.charCodeAt(i);
+}
+var i = 0
+var j = n - 1
+while(i <= j){
+  if (str[i].toLowerCase() === str[j].toLowerCase()) {
+    i++
+    j--
+  }
+  else return 0
+} 
+return 1`,
+    ansCode: `
+return lc3.memory[0x3200]`,
+    testCases: ':0, abcba:5, ABaDcdEDCDaBa:13, aBaDCDEfDCDaBa:14',
+  },
   lab4: {
     testCode: `
 let n = Number(testcase)
