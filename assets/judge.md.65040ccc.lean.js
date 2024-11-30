@@ -35,7 +35,7 @@ while(i <= j){
   else return 0
 } 
 return 1`,ansCode:`
-return lc3.memory[0x3200]`,testCases:"abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14"},lab4:{testCode:`
+return lc3.memory[0x3200]`,testCases:":0, abcba:5, aBaDCDEDCDaBa:13, aBaDCDEfDCDaBa:14"},lab4:{testCode:`
 let n = Number(testcase)
 lc3.memory[0x3100] = n
 let earnArray = new Array(100).fill(-1);    // \u5047\u8BBE\u6700\u5927n\u4E3A100\uFF0C\u6570\u7EC4\u521D\u59CB\u5316\u4E3A-1
